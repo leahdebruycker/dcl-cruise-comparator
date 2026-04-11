@@ -1,0 +1,264 @@
+:root {
+  --teal: #1A3A4A;
+  --seafoam: #60C8C0;
+  --seafoam-dark: #4aada6;
+  --bg: #F0F8F5;
+  --white: #ffffff;
+  --border: #cfe8e3;
+  --text: #1a1a1a;
+  --muted: #5a7070;
+  --error: #b91c1c;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ── Header ───────────────────────────────────── */
+.app-header {
+  background: var(--teal);
+  color: var(--white);
+  padding: 22px 40px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.app-header h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.app-header p {
+  font-size: 0.85rem;
+  opacity: 0.65;
+}
+
+/* ── Main layout ──────────────────────────────── */
+.app-main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 36px 24px 64px;
+}
+
+/* ── Form card ────────────────────────────────── */
+.compare-form {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 36px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+/* ── Field group ──────────────────────────────── */
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.field-group > label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--teal);
+}
+
+.field-group input[type='text'],
+.field-group input[type='date'],
+.field-group input[type='number'],
+.field-group select {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--white);
+  width: 100%;
+  appearance: auto;
+}
+
+.field-group input:focus,
+.field-group select:focus {
+  outline: none;
+  border-color: var(--seafoam);
+  box-shadow: 0 0 0 3px rgba(96, 200, 192, 0.22);
+}
+
+/* ── Client name row ──────────────────────────── */
+.client-name-row {
+  max-width: 480px;
+  margin-bottom: 28px;
+}
+
+/* ── Two-column sailing grid ──────────────────── */
+.sailings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+/* ── Sailing panel ────────────────────────────── */
+.sailing-panel {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  background: var(--bg);
+}
+
+.sailing-panel h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--teal);
+  margin-bottom: 20px;
+  padding-bottom: 11px;
+  border-bottom: 2px solid var(--seafoam);
+}
+
+/* ── Stateroom checkboxes ─────────────────────── */
+.stateroom-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stateroom-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.93rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-label input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--teal);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* ── Price input ──────────────────────────────── */
+.price-field {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.price-prefix {
+  background: #e8f2f0;
+  border: 1px solid var(--border);
+  border-right: none;
+  padding: 9px 10px;
+  border-radius: 7px 0 0 7px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1;
+}
+
+.price-field input[type='number'] {
+  border-radius: 0 7px 7px 0 !important;
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Form actions ─────────────────────────────── */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.btn-generate {
+  background: var(--teal);
+  color: var(--white);
+  border: none;
+  padding: 14px 48px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition: background 0.15s;
+}
+
+.btn-generate:hover:not(:disabled) {
+  background: #0f2530;
+}
+
+.btn-generate:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ── Error ────────────────────────────────────── */
+.error-msg {
+  color: var(--error);
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 16px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 7px;
+  padding: 10px 16px;
+}
+
+/* ── Output section ───────────────────────────── */
+.output-section {
+  margin-top: 44px;
+}
+
+.output-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.output-label {
+  font-weight: 600;
+  color: var(--teal);
+  font-size: 0.95rem;
+}
+
+.btn-open {
+  background: var(--seafoam);
+  color: var(--teal);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-open:hover {
+  background: var(--seafoam-dark);
+}
+
+.comparison-frame {
+  width: 100%;
+  height: 920px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--white);
+}
