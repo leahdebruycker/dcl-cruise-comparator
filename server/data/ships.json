@@ -1,0 +1,480 @@
+{
+  "$schema": "dcl-ships-schema-v1",
+  "ships": [
+    {
+      "id": "magic",
+      "name": "Disney Magic",
+      "class": "Magic",
+      "launched": 1998,
+      "gross_tonnage": 83338,
+      "length_ft": 984,
+      "decks": 11,
+      "staterooms": 875,
+      "guest_capacity": 2400,
+      "crew": 945,
+      "theme": "Golden Age of Ocean Travel — classic Art Deco styling inspired by grand transatlantic liners",
+      "signature_attraction": "AquaDunk — a nearly vertical drop body slide that extends over the side of the ship",
+      "pool_deck": {
+        "notes": "Three pool areas spread across Deck 9 and 10; Goofy's Pool is the main family area, Mickey's Pool is the kids splash zone, Quiet Cove Pool is adults-only",
+        "pools": ["Goofy's Pool", "Mickey's Pool", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaDunk"]
+      },
+      "kids_clubs": {
+        "oceaneer_club": "Marvel Super Hero Academy, Star Wars: Millennium Falcon (themed lab-style play space for ages 3–10)",
+        "oceaneer_lab": "Merged with Oceaneer Club on this ship; shared open-plan space",
+        "edge": "Club for tweens ages 11–14 with lounges, gaming, social activities",
+        "vibe": "Teen-only space ages 14–17 with music, movies, and social events"
+      },
+      "stage_shows": [
+        "Disney Dreams — An Enchanted Classic",
+        "Twice Charmed: An Original Twist on the Cinderella Story",
+        "Believe"
+      ],
+      "rotational_dining": [
+        {
+          "name": "Animator's Palate",
+          "theme": "Art and animation come to life; walls shift from black-and-white sketches to full colour during dinner",
+          "dress_code": "Cruise Casual / Pirate Night"
+        },
+        {
+          "name": "Lumiere's",
+          "theme": "French-inspired fine dining; Beauty and the Beast décor with panoramic sea views",
+          "dress_code": "Cruise Casual / Semi-Formal / Formal"
+        },
+        {
+          "name": "Rapunzel's Royal Table",
+          "theme": "Tangled-inspired; live entertainment with Rapunzel and Flynn Rider characters",
+          "dress_code": "Cruise Casual"
+        }
+      ],
+      "specialty_dining": [
+        {
+          "name": "Palo",
+          "description": "Adults-only (18+) Northern Italian restaurant with panoramic ocean views; additional charge applies",
+          "meal_periods": ["Brunch", "Dinner"]
+        },
+        {
+          "name": "Remy",
+          "description": "Adults-only (18+) French haute-cuisine experience inspired by Ratatouille; significant additional charge",
+          "meal_periods": ["Dinner"]
+        }
+      ],
+      "bars_and_lounges": [
+        { "name": "Beat Street / Rockin' Bar D", "type": "Nightclub / Live music venue" },
+        { "name": "Cadillac Lounge", "type": "Piano bar" },
+        { "name": "Promenade Lounge", "type": "Casual lounge with live entertainment" },
+        { "name": "Outlook Bar", "type": "Outdoor bar on Deck 10 forward" },
+        { "name": "Quiet Cove Bar", "type": "Adults-only poolside bar" },
+        { "name": "Signals", "type": "Poolside bar" }
+      ],
+      "onboard_activities": [
+        "AquaDunk water slide",
+        "Wide World of Sports Deck (basketball, mini-golf, shuffleboard)",
+        "Vista Spa & Salon",
+        "Fitness Center",
+        "Bibbidi Bobbidi Boutique",
+        "Pirates IN the Caribbean deck party",
+        "Character meet-and-greets",
+        "Senses Spa (select sailings)",
+        "Trivia and game shows in the D Lounge"
+      ]
+    },
+    {
+      "id": "wonder",
+      "name": "Disney Wonder",
+      "class": "Magic",
+      "launched": 1999,
+      "gross_tonnage": 83308,
+      "length_ft": 984,
+      "decks": 11,
+      "staterooms": 875,
+      "guest_capacity": 2400,
+      "crew": 945,
+      "theme": "Art Nouveau elegance — fluid organic lines inspired by early 20th-century ocean liners",
+      "signature_attraction": "AquaDunk — same nearly-vertical drop slide as sister ship Magic",
+      "pool_deck": {
+        "notes": "Goofy's Pool is the main family pool; Mickey's Pool is the kids splash area; Quiet Cove Pool is adults-only",
+        "pools": ["Goofy's Pool", "Mickey's Pool", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaDunk"]
+      },
+      "kids_clubs": {
+        "oceaneer_club": "Andy's Room (Toy Story), Mickey and Minnie Captain's Deck (themed for ages 3–10)",
+        "oceaneer_lab": "Shared open-plan lab space with Oceaneer Club",
+        "edge": "Tweens 11–14; lounge style with activities and social spaces",
+        "vibe": "Teen-only club 14–17"
+      },
+      "stage_shows": [
+        "Frozen, A Musical Spectacular",
+        "The Golden Mickeys",
+        "Disney's Aladdin — A Musical Spectacular"
+      ],
+      "rotational_dining": [
+        {
+          "name": "Animator's Palate",
+          "theme": "Animation art comes to life during dinner service",
+          "dress_code": "Cruise Casual / Pirate Night"
+        },
+        {
+          "name": "Triton's",
+          "theme": "Under-the-sea elegance inspired by The Little Mermaid",
+          "dress_code": "Cruise Casual / Semi-Formal / Formal"
+        },
+        {
+          "name": "Tiana's Place",
+          "theme": "The Princess and the Frog — New Orleans jazz and bayou-inspired cuisine with live entertainment",
+          "dress_code": "Cruise Casual"
+        }
+      ],
+      "specialty_dining": [
+        {
+          "name": "Palo",
+          "description": "Adults-only (18+) Northern Italian restaurant; additional charge applies",
+          "meal_periods": ["Brunch", "Dinner"]
+        }
+      ],
+      "bars_and_lounges": [
+        { "name": "Cadillac Lounge", "type": "Piano bar" },
+        { "name": "Crown & Fin Pub", "type": "British-style pub" },
+        { "name": "Promenade Lounge", "type": "Casual lounge with live music" },
+        { "name": "Outlook Bar", "type": "Outdoor forward bar on Deck 10" },
+        { "name": "Quiet Cove Bar", "type": "Adults-only poolside bar" },
+        { "name": "Signals", "type": "Poolside bar" }
+      ],
+      "onboard_activities": [
+        "AquaDunk water slide",
+        "Wide World of Sports Deck",
+        "Vista Spa & Salon",
+        "Fitness Center",
+        "Bibbidi Bobbidi Boutique",
+        "Pirates IN the Caribbean deck party",
+        "Character meet-and-greets",
+        "Trivia and game shows"
+      ]
+    },
+    {
+      "id": "dream",
+      "name": "Disney Dream",
+      "class": "Dream",
+      "launched": 2011,
+      "gross_tonnage": 129690,
+      "length_ft": 1115,
+      "decks": 14,
+      "staterooms": 1250,
+      "guest_capacity": 4000,
+      "crew": 1458,
+      "theme": "Art Deco glamour — larger and grander than the Magic-class with a soaring atrium and golden accents",
+      "signature_attraction": "AquaDuck — first Disney Cruise Line watercoaster; a 765-ft tube coaster that extends over the ship's bow",
+      "pool_deck": {
+        "notes": "Donald's Pool is the main family pool; Nemo's Reef is an interactive water play area for young kids; Quiet Cove Pool is adults-only with whirlpools",
+        "pools": ["Donald's Pool", "Nemo's Reef", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaDuck watercoaster"]
+      },
+      "kids_clubs": {
+        "oceaneer_club": "Star Wars: Jedi Training, Marvel Super Hero Academy, Pixar Play Zone — immersive themed rooms for ages 3–10",
+        "oceaneer_lab": "Separate open-plan STEM and creative activity space for ages 3–10",
+        "edge": "Tweens 11–14; gaming consoles, social lounges",
+        "vibe": "Teen-only 14–17; private outdoor area, music, events"
+      },
+      "stage_shows": [
+        "Beauty and the Beast",
+        "Disney's Believe",
+        "Disney's Wishes"
+      ],
+      "rotational_dining": [
+        {
+          "name": "Animator's Palate",
+          "theme": "Guests become part of an animated film during dinner in this show-stopping venue",
+          "dress_code": "Cruise Casual"
+        },
+        {
+          "name": "Enchanted Garden",
+          "theme": "Garden party at Versailles — décor transforms from day to night during the meal",
+          "dress_code": "Cruise Casual / Semi-Formal / Formal"
+        },
+        {
+          "name": "Royal Palace",
+          "theme": "Disney Princess-inspired French fine dining with ornate palace décor",
+          "dress_code": "Semi-Formal / Formal"
+        }
+      ],
+      "specialty_dining": [
+        {
+          "name": "Palo",
+          "description": "Adults-only (18+) Northern Italian restaurant; additional charge",
+          "meal_periods": ["Brunch", "Dinner"]
+        },
+        {
+          "name": "Remy",
+          "description": "Adults-only (18+) French haute-cuisine tasting menu inspired by Ratatouille; significant upcharge",
+          "meal_periods": ["Dinner"]
+        }
+      ],
+      "bars_and_lounges": [
+        { "name": "The District / Europa", "type": "Adults-only entertainment district with multiple venues" },
+        { "name": "After Hours", "type": "Nightclub" },
+        { "name": "Pink", "type": "Champagne and wine bar" },
+        { "name": "Skyline", "type": "Cocktail lounge with animated city skyline views" },
+        { "name": "O'Gills Pub", "type": "Casual pub with sports screens" },
+        { "name": "Cove Bar", "type": "Adults-only poolside bar" },
+        { "name": "Currents Bar", "type": "Poolside bar" }
+      ],
+      "onboard_activities": [
+        "AquaDuck watercoaster",
+        "Goofy's Sports Deck (mini-golf, basketball)",
+        "Senses Spa & Salon",
+        "Fitness Center",
+        "Bibbidi Bobbidi Boutique",
+        "Pirates IN the Caribbean deck party",
+        "Character meet-and-greets",
+        "D Lounge entertainment and game shows",
+        "Midship Detective Agency (interactive shipwide puzzle game)"
+      ]
+    },
+    {
+      "id": "fantasy",
+      "name": "Disney Fantasy",
+      "class": "Dream",
+      "launched": 2012,
+      "gross_tonnage": 129690,
+      "length_ft": 1115,
+      "decks": 14,
+      "staterooms": 1250,
+      "guest_capacity": 4000,
+      "crew": 1458,
+      "theme": "Art Nouveau — sister ship to the Dream with softer organic styling and a sea-exploration motif",
+      "signature_attraction": "AquaDuck — same 765-ft watercoaster as the Dream, wrapping around the forward hull",
+      "pool_deck": {
+        "notes": "Donald's Pool main family pool; Nemo's Reef splash zone for young children; Quiet Cove adults-only pool with whirlpools",
+        "pools": ["Donald's Pool", "Nemo's Reef", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaDuck watercoaster"]
+      },
+      "kids_clubs": {
+        "oceaneer_club": "Pixar Play Zone, Walt Disney Imagineering Lab, Star Wars Launch Bay — themed rooms for ages 3–10",
+        "oceaneer_lab": "Separate activity space for ages 3–10",
+        "edge": "Tweens 11–14",
+        "vibe": "Teens 14–17; private outdoor deck"
+      },
+      "stage_shows": [
+        "The Little Mermaid",
+        "Aladdin — A Musical Spectacular",
+        "Disney's Believe"
+      ],
+      "rotational_dining": [
+        {
+          "name": "Animator's Palate",
+          "theme": "Animation immersion dinner experience",
+          "dress_code": "Cruise Casual"
+        },
+        {
+          "name": "Enchanted Garden",
+          "theme": "Versailles garden transforms from day to night",
+          "dress_code": "Cruise Casual / Semi-Formal / Formal"
+        },
+        {
+          "name": "Royal Court",
+          "theme": "Disney Princess-inspired French fine dining — similar to Dream's Royal Palace with Fantasy-specific décor details",
+          "dress_code": "Semi-Formal / Formal"
+        }
+      ],
+      "specialty_dining": [
+        {
+          "name": "Palo",
+          "description": "Adults-only (18+) Northern Italian restaurant; additional charge",
+          "meal_periods": ["Brunch", "Dinner"]
+        },
+        {
+          "name": "Remy",
+          "description": "Adults-only (18+) French haute-cuisine tasting menu; significant upcharge",
+          "meal_periods": ["Dinner"]
+        }
+      ],
+      "bars_and_lounges": [
+        { "name": "The District / Europa", "type": "Adults-only entertainment district" },
+        { "name": "After Hours", "type": "Nightclub" },
+        { "name": "Pink", "type": "Champagne and wine bar" },
+        { "name": "Skyline", "type": "Cocktail lounge with animated skylines" },
+        { "name": "O'Gills Pub", "type": "Casual pub" },
+        { "name": "Cove Bar", "type": "Adults-only poolside bar" },
+        { "name": "Currents Bar", "type": "Poolside bar" }
+      ],
+      "onboard_activities": [
+        "AquaDuck watercoaster",
+        "Goofy's Sports Deck",
+        "Senses Spa & Salon",
+        "Fitness Center",
+        "Bibbidi Bobbidi Boutique",
+        "Pirates IN the Caribbean deck party",
+        "Character meet-and-greets",
+        "Midship Detective Agency",
+        "D Lounge entertainment and trivia"
+      ]
+    },
+    {
+      "id": "wish",
+      "name": "Disney Wish",
+      "class": "Triton",
+      "launched": 2022,
+      "gross_tonnage": 144000,
+      "length_ft": 1119,
+      "decks": 15,
+      "staterooms": 1254,
+      "guest_capacity": 4000,
+      "crew": 1555,
+      "theme": "Fantasy and fairy tale — the ship is styled as a wish granted, with a grand staircase atrium inspired by Cinderella's enchanted world",
+      "signature_attraction": "AquaMouse — Disney Cruise Line's first Disney attraction at sea; a 760-ft story-driven water ride featuring Mickey and Minnie",
+      "pool_deck": {
+        "notes": "Three pools including Mickey and Friends Splash Zone for families; Luna, an adults-only rooftop pool; and the Quiet Cove adults-only pool area",
+        "pools": ["Mickey and Friends Splash Zone", "Luna (adults-only)", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaMouse story-driven water ride"]
+      },
+      "kids_clubs": {
+        "oceaneer_club": "Worlds including Marvel Super Hero Academy, Star Wars: Path of the Jedi, Walt Disney Imagineering Lab, and Pixar Play Zone — for ages 3–10",
+        "oceaneer_lab": "Merged into expanded Oceaneer Club space",
+        "the_hideaway": "Tween space ages 11–14 with gaming, crafts, and social areas",
+        "the_quiet_cove": "Teen-only space 14–17"
+      },
+      "stage_shows": [
+        "Disney Seas the Adventure — original story with 15+ characters",
+        "The Little Mermaid",
+        "Disney Uncharted Adventure (interactive live show using AR technology)"
+      ],
+      "rotational_dining": [
+        {
+          "name": "Animator's Palate",
+          "theme": "Reimagined: guests draw characters that come to life on screens throughout the restaurant",
+          "dress_code": "Cruise Casual"
+        },
+        {
+          "name": "Arendelle: A Frozen Dining Adventure",
+          "theme": "Full theatrical dinner show set in the world of Frozen with characters, original songs, and an immersive storyline",
+          "dress_code": "Cruise Casual"
+        },
+        {
+          "name": "1923",
+          "theme": "Celebrates the founding year of The Walt Disney Company; Art Deco California styling with a menu inspired by the studio's heritage",
+          "dress_code": "Semi-Formal / Formal"
+        }
+      ],
+      "specialty_dining": [
+        {
+          "name": "Palo Steakhouse",
+          "description": "Reimagined Palo concept as an adults-only (18+) steakhouse; additional charge",
+          "meal_periods": ["Dinner"]
+        },
+        {
+          "name": "Encanto: A Dining Adventure",
+          "description": "Adults-only (18+) immersive dining experience inspired by Encanto; significant upcharge",
+          "meal_periods": ["Dinner"]
+        },
+        {
+          "name": "Marceline Market",
+          "description": "Quick-service food hall with diverse stations open throughout the day; no upcharge",
+          "meal_periods": ["Breakfast", "Lunch", "Dinner"]
+        }
+      ],
+      "bars_and_lounges": [
+        { "name": "Star Wars: Hyperspace Lounge", "type": "Immersive themed cocktail bar with galactic views; reservation recommended" },
+        { "name": "The Rose", "type": "Adults-only cocktail lounge and nightclub" },
+        { "name": "Nightingale's", "type": "Piano bar in the Grand Hall atrium" },
+        { "name": "Keg & Compass", "type": "Casual pub" },
+        { "name": "Luna", "type": "Adults-only rooftop bar adjacent to Luna pool" },
+        { "name": "Cove Bar", "type": "Adults-only poolside bar" }
+      ],
+      "onboard_activities": [
+        "AquaMouse story water ride",
+        "Mickey and Friends Splash Zone",
+        "Senses Spa & Salon",
+        "Fitness Center",
+        "Bibbidi Bobbidi Boutique",
+        "Pirates IN the Caribbean deck party",
+        "Star Wars: Hyperspace Lounge experiences",
+        "Character meet-and-greets throughout ship",
+        "Disney Uncharted Adventure AR stage show",
+        "D Lounge trivia and entertainment"
+      ]
+    },
+    {
+      "id": "treasure",
+      "name": "Disney Treasure",
+      "class": "Triton",
+      "launched": 2024,
+      "gross_tonnage": 144000,
+      "length_ft": 1119,
+      "decks": 15,
+      "staterooms": 1254,
+      "guest_capacity": 4000,
+      "crew": 1555,
+      "theme": "Adventure and exploration — inspired by Disney's tales of faraway lands and high-seas adventure, with a grand atrium styled after Adventureland and Treasure Island",
+      "signature_attraction": "AquaMouse — same story-driven water coaster as the Wish with updated Mickey and Minnie adventure theming",
+      "pool_deck": {
+        "notes": "Mickey and Friends Splash Zone family pool; adults-only Luna rooftop pool; Quiet Cove adults-only pool area",
+        "pools": ["Mickey and Friends Splash Zone", "Luna (adults-only)", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaMouse story water ride"]
+      },
+      "kids_clubs": {
+        "oceaneer_club": "Worlds including Marvel Super Hero Academy, Star Wars: Path of the Jedi, Walt Disney Imagineering Lab, and Pixar Play Zone",
+        "the_hideaway": "Tween space 11–14",
+        "the_quiet_cove": "Teen-only space 14–17"
+      },
+      "stage_shows": [
+        "Disney Seas the Adventure",
+        "Disney Uncharted Adventure (AR interactive show)",
+        "The Lion King: Rhythms of the Pride Lands"
+      ],
+      "rotational_dining": [
+        {
+          "name": "Animator's Palate",
+          "theme": "Guests draw characters that animate on restaurant screens during dinner",
+          "dress_code": "Cruise Casual"
+        },
+        {
+          "name": "Worlds of Marvel",
+          "theme": "Cinematic dining experience where guests participate in an Avengers mission; original storyline with characters",
+          "dress_code": "Cruise Casual"
+        },
+        {
+          "name": "Perla",
+          "theme": "Inspired by The Princess and the Frog and the romance of New Orleans; upscale Creole-influenced cuisine",
+          "dress_code": "Semi-Formal / Formal"
+        }
+      ],
+      "specialty_dining": [
+        {
+          "name": "Palo Steakhouse",
+          "description": "Adults-only (18+) steakhouse; additional charge",
+          "meal_periods": ["Dinner"]
+        },
+        {
+          "name": "Scat Cat's Club Café",
+          "description": "Adults-only (18+) jazz-inspired supper club; The Aristocats theme; additional charge",
+          "meal_periods": ["Dinner"]
+        },
+        {
+          "name": "Marceline Market",
+          "description": "Quick-service food hall; no upcharge",
+          "meal_periods": ["Breakfast", "Lunch", "Dinner"]
+        }
+      ],
+      "bars_and_lounges": [
+        { "name": "Star Wars: Hyperspace Lounge", "type": "Immersive galactic cocktail bar" },
+        { "name": "The Bayou", "type": "Outdoor lounge inspired by The Princess and the Frog" },
+        { "name": "Keg & Compass", "type": "Casual pub" },
+        { "name": "Luna", "type": "Adults-only rooftop bar" },
+        { "name": "Cove Bar", "type": "Adults-only poolside bar" },
+        { "name": "Haunted Mansion: Doom Bar", "type": "Haunted Mansion-themed cocktail lounge" }
+      ],
+      "onboard_activities": [
+        "AquaMouse story water ride",
+        "Mickey and Friends Splash Zone",
+        "Senses Spa & Salon",
+        "Fitness Center",
+        "Bibbidi Bobbidi Boutique",
+        "Pirates IN the Caribbean deck party",
+        "Star Wars: Hyperspace Lounge experiences",
+        "Character meet-and-greets",
+        "Disney Uncharted Adventure AR stage show",
+        "Jungle Cruise Skipper Society bar activities"
+      ]
+    }
+  ]
+}
