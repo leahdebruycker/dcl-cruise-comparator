@@ -249,15 +249,16 @@
         "slides_and_attractions": ["AquaDuck watercoaster"]
       },
       "kids_clubs": {
-        "oceaneer_club": "Pixar Play Zone, Walt Disney Imagineering Lab, Star Wars Launch Bay — themed rooms for ages 3–10",
-        "oceaneer_lab": "Separate activity space for ages 3–10",
-        "edge": "Tweens 11–14",
-        "vibe": "Teens 14–17; private outdoor deck"
+        "oceaneer_club": "Andy's Room (Toy Story), Marvel Super Hero Academy, Disney Junior, Frozen Adventures — themed immersive rooms for ages 3–12",
+        "oceaneer_lab": "Separate open-plan activity and STEM space for ages 3–12",
+        "edge": "Tweens 11–14; gaming, crafts, social lounges",
+        "vibe": "Teens 14–17; private outdoor deck, music, movies"
       },
       "stage_shows": [
-        "The Little Mermaid",
-        "Aladdin — A Musical Spectacular",
-        "Disney's Believe"
+        "Frozen: A Musical Spectacular",
+        "Disney's Aladdin: A Musical Spectacular",
+        "Disney's Believe",
+        "Disney Seas the Adventure"
       ],
       "rotational_dining": [
         {
@@ -289,13 +290,14 @@
         }
       ],
       "bars_and_lounges": [
-        { "name": "The District / Europa", "type": "Adults-only entertainment district" },
-        { "name": "After Hours", "type": "Nightclub" },
-        { "name": "Pink", "type": "Champagne and wine bar" },
-        { "name": "Skyline", "type": "Cocktail lounge with animated skylines" },
-        { "name": "O'Gills Pub", "type": "Casual pub" },
-        { "name": "Cove Bar", "type": "Adults-only poolside bar" },
-        { "name": "Currents Bar", "type": "Poolside bar" }
+        { "name": "O'Gill's Pub", "type": "Irish pub — dark wood, brass accents, casual atmosphere", "district": "Europa" },
+        { "name": "Skyline", "type": "Cocktail lounge — animated city skyline views change nightly (Paris, NYC, Hong Kong, Chicago, Rio), city-themed signature cocktails", "district": "Europa" },
+        { "name": "Pink", "type": "Wine and champagne bar — elegant, upscale", "district": "Europa" },
+        { "name": "District Lounge", "type": "Piano bar with live music and entertainment", "district": "Europa" },
+        { "name": "Evolution", "type": "Nightclub and karaoke — adults-only after dark", "district": "Europa" },
+        { "name": "Meridian Bar", "type": "Cocktail bar on Deck 12 between Palo and Remy — pre/post specialty dining", "district": "Standalone" },
+        { "name": "Preludes", "type": "Theater bar adjacent to Walt Disney Theatre — cocktails and snacks before shows", "district": "Standalone" },
+        { "name": "Cove Bar", "type": "Adults-only poolside bar", "district": "Pool Deck" }
       ],
       "onboard_activities": [
         "AquaDuck watercoaster",
@@ -358,17 +360,17 @@
       "specialty_dining": [
         {
           "name": "Palo Steakhouse",
-          "description": "Reimagined Palo concept as an adults-only (18+) steakhouse; additional charge",
+          "description": "Adults-only (18+) reimagined Palo concept as an upscale steakhouse; additional charge",
           "meal_periods": ["Dinner"]
         },
         {
-          "name": "Encanto: A Dining Adventure",
-          "description": "Adults-only (18+) immersive dining experience inspired by Encanto; significant upcharge",
+          "name": "Enchanté",
+          "description": "Adults-only (18+) French fine dining experience inspired by Beauty and the Beast; significant upcharge",
           "meal_periods": ["Dinner"]
         },
         {
           "name": "Marceline Market",
-          "description": "Quick-service food hall with diverse stations open throughout the day; no upcharge",
+          "description": "Quick-service food hall with diverse stations; no upcharge",
           "meal_periods": ["Breakfast", "Lunch", "Dinner"]
         }
       ],
@@ -423,19 +425,19 @@
       ],
       "rotational_dining": [
         {
-          "name": "Animator's Palate",
-          "theme": "Guests draw characters that animate on restaurant screens during dinner",
-          "dress_code": "Cruise Casual"
+          "name": "1923",
+          "theme": "Celebrates the founding year of The Walt Disney Company — Walt side and Roy side dining rooms filled with movie memorabilia, posters, and sculptures. Upscale American menu.",
+          "dress_code": "Semi-Formal / Formal"
         },
         {
           "name": "Worlds of Marvel",
-          "theme": "Cinematic dining experience where guests participate in an Avengers mission; original storyline with characters",
+          "theme": "Cinematic Marvel dining experience — Guardians of the Galaxy show plays on screens during dinner. Menu inspired by Marvel film locations.",
           "dress_code": "Cruise Casual"
         },
         {
-          "name": "Perla",
-          "theme": "Inspired by The Princess and the Frog and the romance of New Orleans; upscale Creole-influenced cuisine",
-          "dress_code": "Semi-Formal / Formal"
+          "name": "Plaza de Coco",
+          "theme": "Inspired by Coco and Día de los Muertos — vibrant Mexican décor and cuisine. Two-night celebration with Miguel and the Mariachis on night one, full Día de los Muertos celebration on night two.",
+          "dress_code": "Cruise Casual"
         }
       ],
       "specialty_dining": [
@@ -475,6 +477,104 @@
         "Disney Uncharted Adventure AR stage show",
         "Jungle Cruise Skipper Society bar activities"
       ]
+    },
+    {
+      "id": "destiny",
+      "name": "Disney Destiny",
+      "class": "Triton",
+      "launched": 2025,
+      "gross_tonnage": 144000,
+      "length_ft": 1119,
+      "decks": 15,
+      "staterooms": 1254,
+      "guest_capacity": 4000,
+      "crew": 1555,
+      "theme": "Heroes and Villains — Disney's first ship themed around the full spectrum of heroes, villains, and anti-heroes from across the Disney universe. Black Panther Grand Hall, villain-inspired lounges throughout.",
+      "signature_attraction": "AquaMouse — villain-themed story water coaster. Also: Disney Uncharted Adventure shipwide interactive quest via Navigator app.",
+      "pool_deck": {
+        "notes": "Mickey and Friends Splash Zone family pool; Toy Story Splash Zone kids water play area; Quiet Cove adults-only pool. Triton-class pool decks run smaller than Dream-class — can feel crowded on sea days.",
+        "pools": ["Mickey and Friends Splash Zone", "Toy Story Splash Zone", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaMouse villain-themed water coaster"]
+      },
+      "kids_clubs": {
+        "oceaneer_club": "Ages 3–10. Swirly slide entry. Tangled craft room, Beauty and the Beast library, villain invasion interactive storyline where kids help Black Panther defeat a villain. Character visits from Cruella de Vil, Loki, and Black Panther.",
+        "edge": "Tweens 11–14; gaming, social activities",
+        "vibe": "Teens 14–17 — The Hideaway; private lounge with music, movies, social events",
+        "nursery": "It's a Small World Nursery for ages 6 months to 3 years"
+      },
+      "stage_shows": [
+        "Disney Hercules — large-scale puppets (Hydra, Titans), told by the Muses. Includes 'Shooting Star' a song cut from the original 1997 film. Exclusive to Destiny.",
+        "Frozen: A Musical Spectacular — live retelling with puppets, projections, and snow effects.",
+        "Disney Seas the Adventure — embarkation night show, Captain Minnie sends Goofy on a journey through Disney and Pixar stories."
+      ],
+      "rotational_dining": [
+        {
+          "name": "1923",
+          "theme": "Tribute to Walt and Roy Disney's founding year. Movie memorabilia, posters, sculptures. Walt side and Roy side dining rooms. Upscale American menu — filet mignon, rack of lamb, roasted chicken, salmon.",
+          "dress_code": "Semi-Formal / Formal"
+        },
+        {
+          "name": "Worlds of Marvel",
+          "theme": "Guardians of the Galaxy 'Groot Remix' show plays on screens during dinner. Two-room Marvel experience. Menu inspired by Marvel film locations.",
+          "dress_code": "Cruise Casual"
+        },
+        {
+          "name": "Pride Lands: Feast of the Lion King",
+          "theme": "Dinner and live show exclusive to Destiny. Six performers and 23 African instruments retell Simba's story. Songs from all Lion King films, the Broadway production, and exclusive new song 'Serengeti Rain.' African-inspired cuisine with authentic spices, grains, and produce.",
+          "dress_code": "Cruise Casual"
+        }
+      ],
+      "specialty_dining": [
+        {
+          "name": "Palo Steakhouse",
+          "description": "Adults-only (18+) upscale steakhouse; additional charge",
+          "meal_periods": ["Dinner"]
+        },
+        {
+          "name": "Enchanté",
+          "description": "Adults-only (18+) French fine dining; significant upcharge",
+          "meal_periods": ["Dinner"]
+        },
+        {
+          "name": "Marceline Market",
+          "description": "Quick-service food hall; no upcharge",
+          "meal_periods": ["Breakfast", "Lunch", "Dinner"]
+        }
+      ],
+      "bars_and_lounges": [
+        { "name": "De Vil's", "type": "Cruella de Vil piano lounge — black, white and red décor, dalmatian-spotted piano, themed cocktails. Live music evenings. Interactive 'Treble-Making with Cruella' show.", "district": "Grand Hall area, Deck 3" },
+        { "name": "The Sanctum", "type": "Doctor Strange themed lounge — mystical décor, Cloak of Levitation, circular mirror behind bar. Cocktails, mocktails, and coffee. Live music evenings.", "district": "Deck 3" },
+        { "name": "Cask & Cannon", "type": "Pirates of the Caribbean pub — eclectic pirate décor, specialty and vintage rums, live sports.", "district": "Deck 5 Forward" },
+        { "name": "Haunted Mansion Parlor", "type": "Gothic adults-only bar inspired by the Haunted Mansion attraction.", "district": "Deck 3" },
+        { "name": "The Rose", "type": "Beauty and the Beast adults-only lounge on Deck 12 adjacent to Palo Steakhouse.", "district": "Deck 12" },
+        { "name": "Saga", "type": "Wakanda-inspired 2-story entertainment space. Family activities by day, bar by night. Hosts trivia, karaoke, game shows.", "district": "Deck 4–5" },
+        { "name": "Café Megara", "type": "Specialty coffee and cocktails inspired by Hercules character Megara.", "district": "Deck 4" },
+        { "name": "Café Merida", "type": "Specialty coffee and cocktails inspired by Brave character Merida.", "district": "Deck 5" },
+        { "name": "Cove Café", "type": "Adults-only coffee bar and lounge on Deck 12.", "district": "Pool Deck" },
+        { "name": "Triton Lounge", "type": "Casual all-ages lounge.", "district": "Standalone" }
+      ],
+      "onboard_activities": [
+        "AquaMouse villain-themed water coaster",
+        "Toy Story Splash Zone",
+        "Hero Zone — Incredibles-inspired recreation space on Deck 12 with sports court, playground, game floor, Incredi-Games competitions",
+        "Disney Uncharted Adventure — interactive shipwide quest via Navigator app",
+        "Haunted Mansion Happy Hunt — DisneyBand+ scavenger hunt",
+        "Senses Spa & Salon",
+        "Fitness Center",
+        "Bibbidi Bobbidi Boutique (becomes Pirates League on Pirate Night)",
+        "Hook's Barbery — barber shop and whisky bar",
+        "Untangled Salon — Rapunzel-inspired hair and nail salon",
+        "Pirate's Rockin' Parlay Party deck event with fireworks",
+        "Character meet-and-greets — Loki, Black Panther, Maleficent, Hades, Cruella de Vil, Dr. Facilier, Captain Jack Sparrow, Captain Hook, Oogie Boogie, Bruno",
+        "Treble-Making with Cruella — interactive live show in De Vil's",
+        "Dr. Facilier's Parlour — immersive villain meet and play experience",
+        "Wonderland Cinema and Never Land Cinema (2 screens)",
+        "Sounds of Wakanda live music experience"
+      ],
+      "character_encounters": {
+        "notes": "Heroes and villains roster is the broadest villain/anti-hero lineup in the DCL fleet. Features extended 'meet and play' immersive experiences rather than traditional meet-and-greet lines for select characters.",
+        "characters": ["Loki", "Black Panther", "Maleficent", "Hades", "Cruella de Vil", "Dr. Facilier", "Captain Jack Sparrow", "Captain Hook", "Mr. Smee", "Oogie Boogie", "Bruno", "Mickey Mouse", "Minnie Mouse"]
+      }
     }
   ]
 }
