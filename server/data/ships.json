@@ -88,11 +88,11 @@
       "guest_capacity": 2400,
       "crew": 945,
       "theme": "Art Nouveau elegance — fluid organic lines inspired by early 20th-century ocean liners",
-      "signature_attraction": "AquaDunk — same nearly-vertical drop slide as sister ship Magic",
+      "signature_attraction": "Twist 'n' Spout — a double-looping yellow spiral slide (~250 ft) located within AquaLab; Wonder's signature water attraction",
       "pool_deck": {
-        "notes": "Goofy's Pool is the main family pool; Mickey's Pool is the kids splash area; Quiet Cove Pool is adults-only",
-        "pools": ["Goofy's Pool", "Mickey's Pool", "Quiet Cove Pool"],
-        "slides_and_attractions": ["AquaDunk"]
+        "notes": "Goofy's Family Pool is the main family area; AquaLab and Dory's Reef are the kids water play areas; Quiet Cove Pool is adults-only",
+        "pools": ["Goofy's Family Pool", "AquaLab", "Dory's Reef", "Quiet Cove Pool"],
+        "slides_and_attractions": ["Twist 'n' Spout"]
       },
       "kids_clubs": {
         "oceaneer_club": "Andy's Room (Toy Story), Mickey and Minnie Captain's Deck (themed for ages 3–10)",
@@ -130,12 +130,14 @@
         }
       ],
       "bars_and_lounges": [
+        { "name": "Azure", "type": "Adults-only nightclub/bar; DJ sets, karaoke, and comedy nightly after 9pm" },
+        { "name": "French Quarter Lounge", "type": "Tiana/Princess and the Frog-themed bar with live music and beignets" },
         { "name": "Cadillac Lounge", "type": "Piano bar" },
         { "name": "Crown & Fin Pub", "type": "British-style pub" },
-        { "name": "Promenade Lounge", "type": "Casual lounge with live music" },
-        { "name": "Outlook Bar", "type": "Outdoor forward bar on Deck 10" },
-        { "name": "Quiet Cove Bar", "type": "Adults-only poolside bar" },
-        { "name": "Signals", "type": "Poolside bar" }
+        { "name": "Preludes Bar", "type": "Theater bar adjacent to Walt Disney Theatre — cocktails before shows" },
+        { "name": "Cove Café", "type": "Adults-only coffee bar and lounge" },
+        { "name": "Signals", "type": "Poolside bar" },
+        { "name": "D Lounge", "type": "Multi-use entertainment lounge; trivia, game shows, family activities" }
       ],
       "onboard_activities": [
         "AquaDunk water slide",
