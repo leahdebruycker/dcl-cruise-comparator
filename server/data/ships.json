@@ -15,9 +15,9 @@
       "theme": "Golden Age of Ocean Travel — classic Art Deco styling inspired by grand transatlantic liners",
       "signature_attraction": "AquaDunk — a nearly vertical drop body slide that extends over the side of the ship",
       "pool_deck": {
-        "notes": "Three pool areas spread across Deck 9 and 10; Goofy's Pool is the main family area, Mickey's Pool is the kids splash zone, Quiet Cove Pool is adults-only",
-        "pools": ["Goofy's Pool", "Mickey's Pool", "Quiet Cove Pool"],
-        "slides_and_attractions": ["AquaDunk"]
+        "notes": "Three pool areas across Deck 9 and 10; Goofy's Family Pool is the main family area, AquaLab and Nephews' Splash Zone are the kids water play areas, Quiet Cove Pool is adults-only",
+        "pools": ["Goofy's Family Pool", "AquaLab", "Nephews' Splash Zone", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaDunk", "Twist 'n' Spout"]
       },
       "kids_clubs": {
         "oceaneer_club": "Marvel Super Hero Academy, Star Wars: Millennium Falcon (themed lab-style play space for ages 3–10)",
@@ -52,20 +52,17 @@
           "name": "Palo",
           "description": "Adults-only (18+) Northern Italian restaurant with panoramic ocean views; additional charge applies",
           "meal_periods": ["Brunch", "Dinner"]
-        },
-        {
-          "name": "Remy",
-          "description": "Adults-only (18+) French haute-cuisine experience inspired by Ratatouille; significant additional charge",
-          "meal_periods": ["Dinner"]
         }
       ],
       "bars_and_lounges": [
-        { "name": "Beat Street / Rockin' Bar D", "type": "Nightclub / Live music venue" },
-        { "name": "Cadillac Lounge", "type": "Piano bar" },
-        { "name": "Promenade Lounge", "type": "Casual lounge with live entertainment" },
-        { "name": "Outlook Bar", "type": "Outdoor bar on Deck 10 forward" },
-        { "name": "Quiet Cove Bar", "type": "Adults-only poolside bar" },
-        { "name": "Signals", "type": "Poolside bar" }
+        { "name": "Fathoms", "type": "Adults-only nightclub with undersea theme; DJs, karaoke, comedy, and live music nightly" },
+        { "name": "Keys", "type": "Adults-only piano bar with 1960s Chicago lounge aesthetic; live performances nightly" },
+        { "name": "Soul Cat Lounge", "type": "Jazz lounge inspired by Pixar's Soul — Joe Gardner's Half Note Club; live jazz, Manhattan cocktails" },
+        { "name": "O'Gills Pub", "type": "Casual Irish pub" },
+        { "name": "Preludes Bar", "type": "Theater bar adjacent to Walt Disney Theatre — cocktails before shows" },
+        { "name": "Cove Café", "type": "Adults-only coffee bar and lounge" },
+        { "name": "Signals", "type": "Poolside bar" },
+        { "name": "D Lounge", "type": "Multi-use entertainment lounge; trivia, game shows, family activities" }
       ],
       "onboard_activities": [
         "AquaDunk water slide",
