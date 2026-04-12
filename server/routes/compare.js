@@ -67,9 +67,13 @@ function diningRows(venuesA, venuesB) {
 
 function showRows(showsA, showsB) {
   const len = Math.max(showsA.length, showsB.length)
-  return Array.from({ length: len }, (_, i) =>
-    row(showsA[i] ?? '', showsB[i] ?? '', i % 2 === 1)
-  ).join('')
+  return Array.from({ length: len }, (_, i) => {
+    const a = showsA[i]
+    const b = showsB[i]
+    const cellA = a ? `<strong>${a.name}</strong><br><span class="sub">${a.description}</span>` : ''
+    const cellB = b ? `<strong>${b.name}</strong><br><span class="sub">${b.description}</span>` : ''
+    return row(cellA, cellB, i % 2 === 1)
+  }).join('')
 }
 
 function kidsClubRows(clubsA, clubsB) {

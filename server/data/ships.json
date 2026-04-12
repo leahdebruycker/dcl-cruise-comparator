@@ -26,9 +26,18 @@
         "vibe": "Teen-only space ages 14–17 with music, movies, and social events"
       },
       "stage_shows": [
-        "Disney Dreams — An Enchanted Classic",
-        "Twice Charmed: An Original Twist on the Cinderella Story",
-        "Believe"
+        {
+          "name": "Disney Dreams — An Enchanted Classic",
+          "description": "Mickey and Minnie guide guests on a journey through beloved Disney animated films — Bambi, The Little Mermaid, Beauty and the Beast, The Lion King, and more. Live performers, aerial sequences, and pyrotechnics."
+        },
+        {
+          "name": "Twice Charmed: An Original Twist on the Cinderella Story",
+          "description": "Original DCL show — the Evil Stepmother enlists a scheming Fairy Godfather to travel back in time and undo Cinderella's happy ending. Magic-class exclusive."
+        },
+        {
+          "name": "Believe",
+          "description": "Skeptical scientist father Dr. Sydney Chambers rediscovers the magic of wonder through his daughter and beloved Disney characters. Emotionally resonant — popular with parents."
+        }
       ],
       "rotational_dining": [
         {
@@ -101,9 +110,18 @@
         "vibe": "Teen-only club 14–17"
       },
       "stage_shows": [
-        "Frozen, A Musical Spectacular",
-        "The Golden Mickeys",
-        "Disney's Aladdin — A Musical Spectacular"
+        {
+          "name": "Frozen, A Musical Spectacular",
+          "description": "Live retelling of the film with large-scale puppets, projections, and snow effects. Anna, Elsa, Olaf, and the trolls brought to life by a full cast. Same production as on Fantasy."
+        },
+        {
+          "name": "The Golden Mickeys",
+          "description": "Awards-ceremony format celebrating Disney animated films. Characters accept Golden Mickey awards in categories like Best Villain, Most Magical Moment, and Most Memorable Kiss — with full production numbers and costumes."
+        },
+        {
+          "name": "Disney's Aladdin — A Musical Spectacular",
+          "description": "45-minute Broadway-style production — Genie, flying carpets, magic extending into the aisles. Updated with current humor. Same production as on Fantasy."
+        }
       ],
       "rotational_dining": [
         {
@@ -175,9 +193,18 @@
         "vibe": "Teen-only 14–17; private outdoor area, music, events"
       },
       "stage_shows": [
-        "Beauty and the Beast",
-        "Disney's Believe",
-        "Disney's Wishes"
+        {
+          "name": "Beauty and the Beast",
+          "description": "Full live-stage adaptation of the animated film — elaborate castle sets, iconic ballroom scene, and the Beast's transformation finale. Rich costumes and production design."
+        },
+        {
+          "name": "Disney's Believe",
+          "description": "Original DCL show — skeptical scientist father Dr. Sydney Chambers rediscovers wonder through his daughter Maggie and beloved Disney characters. Emotionally resonant — popular with parents."
+        },
+        {
+          "name": "Disney's Wishes",
+          "description": "Original DCL production — a young girl and a wide cast of Disney characters help each other discover that wishes can come true. Upbeat finale with classic Disney songs."
+        }
       ],
       "rotational_dining": [
         {
@@ -258,10 +285,22 @@
         "vibe": "Teens 14–17; private outdoor deck, music, movies"
       },
       "stage_shows": [
-        "Frozen: A Musical Spectacular",
-        "Disney's Aladdin: A Musical Spectacular",
-        "Disney's Believe",
-        "Disney Seas the Adventure"
+        {
+          "name": "Frozen: A Musical Spectacular",
+          "description": "Live retelling with puppets, projections, and snow effects. Anna, Elsa, Olaf, and the trolls performed by a full cast. Same production as on Wonder."
+        },
+        {
+          "name": "Disney's Aladdin: A Musical Spectacular",
+          "description": "45-minute Broadway-style show — Genie, flying carpets, action extending into the aisles. Updated with current humor. Same production as on Wonder."
+        },
+        {
+          "name": "Disney's Believe",
+          "description": "Original DCL show — scientist father rediscovers wonder through his daughter and Disney characters. Popular with parents. Same production as on Dream."
+        },
+        {
+          "name": "Disney Seas the Adventure",
+          "description": "Embarkation night show — Captain Minnie sends Goofy on a journey through Disney and Pixar worlds. Same production as on Destiny."
+        }
       ],
       "rotational_dining": [
         {
@@ -342,9 +381,18 @@
         "vibe": "Teen-only space ages 14–17 with music, movies, and social events"
       },
       "stage_shows": [
-        "Disney Seas the Adventure — original story with 15+ characters",
-        "The Little Mermaid",
-        "Disney Uncharted Adventure (interactive live show using AR technology)"
+        {
+          "name": "Disney Seas the Adventure",
+          "description": "Embarkation night show — Captain Minnie sends Goofy on a journey through Disney and Pixar worlds. 15+ characters appear across the production."
+        },
+        {
+          "name": "The Little Mermaid",
+          "description": "Full live-stage production exclusive to the Wish — elaborate underwater sets, flying sequences, a spectacular Ursula puppet, and all the classic songs from the film."
+        },
+        {
+          "name": "Disney Uncharted Adventure",
+          "description": "Interactive live show using AR technology via the Navigator app. Audience members use their phones to help Disney characters complete a real-time mission projected on stage."
+        }
       ],
       "rotational_dining": [
         {
@@ -428,9 +476,18 @@
         "vibe": "Teen-only space ages 14–17 with music, movies, and social events"
       },
       "stage_shows": [
-        "Disney Seas the Adventure",
-        "Disney Uncharted Adventure (AR interactive show)",
-        "The Lion King: Rhythms of the Pride Lands"
+        {
+          "name": "Disney Seas the Adventure",
+          "description": "Embarkation night show — Captain Minnie sends Goofy on a journey through Disney and Pixar worlds. Same production as on other ships."
+        },
+        {
+          "name": "Disney Uncharted Adventure",
+          "description": "Interactive AR live show using the Navigator app. Audience members help Disney characters complete a real-time mission. Same format as on Wish."
+        },
+        {
+          "name": "The Lion King: Rhythms of the Pride Lands",
+          "description": "Original live production exclusive to Treasure — six performers playing 23 African instruments retell Simba's story. Features songs from all Lion King films, Broadway, and the exclusive 'Serengeti Rain.' African-inspired choreography."
+        }
       ],
       "rotational_dining": [
         {
@@ -509,9 +566,18 @@
         "nursery": "It's a Small World Nursery for ages 6 months to 3 years"
       },
       "stage_shows": [
-        "Disney Hercules — large-scale puppets (Hydra, Titans), told by the Muses. Includes 'Shooting Star' a song cut from the original 1997 film. Exclusive to Destiny.",
-        "Frozen: A Musical Spectacular — live retelling with puppets, projections, and snow effects.",
-        "Disney Seas the Adventure — embarkation night show, Captain Minnie sends Goofy on a journey through Disney and Pixar stories."
+        {
+          "name": "Disney Hercules",
+          "description": "Large-scale puppets bring the Hydra and Titans to life. Includes 'Shooting Star' — a song cut from the original 1997 film. Told by the Muses. Exclusive to Destiny."
+        },
+        {
+          "name": "Frozen: A Musical Spectacular",
+          "description": "Live retelling with puppets, projections, and snow effects. Anna, Elsa, Olaf, and the trolls performed by a full cast. Same production as on Fantasy and Wonder."
+        },
+        {
+          "name": "Disney Seas the Adventure",
+          "description": "Embarkation night show — Captain Minnie sends Goofy on a journey through Disney and Pixar worlds. Same production as on other ships."
+        }
       ],
       "rotational_dining": [
         {
