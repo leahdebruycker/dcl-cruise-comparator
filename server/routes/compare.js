@@ -28,7 +28,7 @@ function formatPrice(price) {
 
 function sectionHeader(title) {
   return `<tr>
-    <td colspan="2" style="background:#1A3A4A;color:#fff;font-weight:700;font-size:0.78rem;letter-spacing:0.07em;text-transform:uppercase;padding:10px 18px;">
+    <td colspan="2" style="background:#f0f7f5;color:#2A7A8A;font-weight:700;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;padding:7px 18px;border-top:1px solid #c8e8e4;border-bottom:1px solid #c8e8e4;">
       ${title}
     </td>
   </tr>`
@@ -140,12 +140,16 @@ function buildHtml({ clientName, sailingA, sailingB, shipA, shipB }) {
     body { font-family: 'DM Sans', sans-serif; background: #F0F8F5; color: #1a1a1a; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .page { max-width: 860px; margin: 0 auto; padding: 28px 16px 64px; }
 
-    .doc-header { background: #1A3A4A; color: #fff; padding: 26px 28px 22px; border-radius: 10px 10px 0 0; }
+    .doc-header { background: #1A3A4A; color: #fff; padding: 22px 28px 18px; border-radius: 10px 10px 0 0; }
+    .doc-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #60C8C0; margin-bottom: 5px; }
     .doc-header h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; }
-    .doc-header .meta { font-size: 0.78rem; opacity: 0.6; margin-top: 5px; }
+    .doc-header .meta { font-size: 0.72rem; opacity: 0.55; margin-top: 4px; }
 
-    .col-headers { display: grid; grid-template-columns: 1fr 1fr; background: #60C8C0; }
-    .col-header { padding: 11px 18px; font-weight: 700; color: #1A3A4A; font-size: 0.95rem; }
+    .col-headers { display: grid; grid-template-columns: 1fr 1fr; background: #1A3A4A; }
+    .col-header { padding: 12px 18px; }
+    .col-header .option-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 3px; }
+    .col-header .ship-name { font-size: 1rem; font-weight: 700; color: #fff; }
+    .col-header .sailing-meta { font-size: 0.72rem; color: rgba(255,255,255,0.55); margin-top: 2px; }
 
     .section { margin-top: 20px; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
     .section:first-of-type { margin-top: 0; border-radius: 0 0 10px 10px; }
@@ -170,12 +174,21 @@ function buildHtml({ clientName, sailingA, sailingB, shipA, shipB }) {
 
   <div class="section">
     <div class="doc-header">
+      <div class="doc-eyebrow">Escapes with Leah &nbsp;&middot;&nbsp; Disney Cruise Line</div>
       <h1>Sailing Comparison &mdash; ${clientName}</h1>
-      <div class="meta">Prepared ${today} &nbsp;&middot;&nbsp; Disney Cruise Line &nbsp;&middot;&nbsp; For travel agent use</div>
+      <div class="meta">Prepared ${today}</div>
     </div>
     <div class="col-headers">
-      <div class="col-header">Sailing A &mdash; ${shipA.name}</div>
-      <div class="col-header">Sailing B &mdash; ${shipB.name}</div>
+      <div class="col-header" style="border-right:1px solid rgba(255,255,255,0.12);">
+        <div class="option-label" style="color:#60C8C0;">Option A</div>
+        <div class="ship-name">${shipA.name}</div>
+        <div class="sailing-meta">${formatDate(sailingA.departureDate)}&nbsp;&middot;&nbsp;${sailingA.homeport || '—'}</div>
+      </div>
+      <div class="col-header">
+        <div class="option-label" style="color:#d0a8ff;">Option B</div>
+        <div class="ship-name">${shipB.name}</div>
+        <div class="sailing-meta">${formatDate(sailingB.departureDate)}&nbsp;&middot;&nbsp;${sailingB.homeport || '—'}</div>
+      </div>
     </div>
     <table>
       ${sectionHeader('Sailing Overview')}

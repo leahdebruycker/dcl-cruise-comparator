@@ -30,7 +30,7 @@ function formatMonth(ym) {
   return `${MONTH_NAMES[Number(m) - 1]} ${y}`
 }
 
-function SailingPanel({ label, state, setState, sailings, ships }) {
+function SailingPanel({ label, accent, state, setState, sailings, ships }) {
   const [filterMonth, setFilterMonth] = useState('')
   const [filterDuration, setFilterDuration] = useState('')
   const [filterShip, setFilterShip] = useState('')
@@ -104,7 +104,7 @@ function SailingPanel({ label, state, setState, sailings, ships }) {
 
   return (
     <div className="sailing-panel">
-      <h2>{label}</h2>
+      <h2 style={{ borderBottomColor: accent }}>{label}</h2>
 
       <div className="filter-bar">
         <div className="filter-field">
@@ -295,8 +295,8 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>DCL Cruise Comparator</h1>
-        <p>Build a side-by-side sailing comparison for your clients</p>
+        <h1>Escapes with Leah</h1>
+        <p>Sailing Comparator &nbsp;&middot;&nbsp; Disney Cruise Line</p>
       </header>
 
       <main className="app-main">
@@ -314,8 +314,8 @@ export default function App() {
           </div>
 
           <div className="sailings-grid">
-            <SailingPanel label="Sailing A" state={sailingA} setState={setSailingA} sailings={sailings} ships={ships} />
-            <SailingPanel label="Sailing B" state={sailingB} setState={setSailingB} sailings={sailings} ships={ships} />
+            <SailingPanel label="Option A" accent="var(--seafoam)" state={sailingA} setState={setSailingA} sailings={sailings} ships={ships} />
+            <SailingPanel label="Option B" accent="var(--purple)" state={sailingB} setState={setSailingB} sailings={sailings} ships={ships} />
           </div>
 
           {error && <p className="error-msg">{error}</p>}
