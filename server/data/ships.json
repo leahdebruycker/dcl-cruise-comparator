@@ -331,15 +331,15 @@
       "theme": "Fantasy and fairy tale — the ship is styled as a wish granted, with a grand staircase atrium inspired by Cinderella's enchanted world",
       "signature_attraction": "AquaMouse — Disney Cruise Line's first Disney attraction at sea; a 760-ft story-driven water ride featuring Mickey and Minnie",
       "pool_deck": {
-        "notes": "Three pools including Mickey and Friends Splash Zone for families; Luna, an adults-only rooftop pool; and the Quiet Cove adults-only pool area",
-        "pools": ["Mickey and Friends Splash Zone", "Luna (adults-only)", "Quiet Cove Pool"],
-        "slides_and_attractions": ["AquaMouse story-driven water ride"]
+        "notes": "Mickey and Friends character pool area features seven individual pools (Mickey's, Minnie's, Donald's, Daisy's, Goofy's, Chip 'n' Dale's, Pluto's); Toy Story Splash Zone for younger kids; Quiet Cove Pool is adults-only",
+        "pools": ["Mickey's Pool", "Minnie's Pool", "Donald's Pool", "Daisy's Pool", "Goofy's Pool", "Chip 'n' Dale's Pool", "Pluto's Pool", "Toy Story Splash Zone", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaMouse", "Slide-a-saurus Rex", "Trixie's Falls"]
       },
       "kids_clubs": {
         "oceaneer_club": "Worlds including Marvel Super Hero Academy, Star Wars: Path of the Jedi, Walt Disney Imagineering Lab, and Pixar Play Zone — for ages 3–10",
         "oceaneer_lab": "Merged into expanded Oceaneer Club space",
         "the_hideaway": "Tween space ages 11–14 with gaming, crafts, and social areas",
-        "the_quiet_cove": "Teen-only space 14–17"
+        "vibe": "Teen-only space ages 14–17 with music, movies, and social events"
       },
       "stage_shows": [
         "Disney Seas the Adventure — original story with 15+ characters",
@@ -348,8 +348,8 @@
       ],
       "rotational_dining": [
         {
-          "name": "Animator's Palate",
-          "theme": "Reimagined: guests draw characters that come to life on screens throughout the restaurant",
+          "name": "Worlds of Marvel",
+          "theme": "Cinematic Marvel dining experience — Guardians of the Galaxy show plays on screens during dinner; menu inspired by Marvel film locations",
           "dress_code": "Cruise Casual"
         },
         {
@@ -373,20 +373,22 @@
           "name": "Enchanté",
           "description": "Adults-only (18+) French fine dining experience inspired by Beauty and the Beast; significant upcharge",
           "meal_periods": ["Dinner"]
-        },
-        {
-          "name": "Marceline Market",
-          "description": "Quick-service food hall with diverse stations; no upcharge",
-          "meal_periods": ["Breakfast", "Lunch", "Dinner"]
         }
       ],
       "bars_and_lounges": [
         { "name": "Star Wars: Hyperspace Lounge", "type": "Immersive themed cocktail bar with galactic views; reservation recommended" },
         { "name": "The Rose", "type": "Adults-only cocktail lounge and nightclub" },
         { "name": "Nightingale's", "type": "Piano bar in the Grand Hall atrium" },
+        { "name": "The Bayou", "type": "Outdoor lounge inspired by The Princess and the Frog" },
         { "name": "Keg & Compass", "type": "Casual pub" },
-        { "name": "Luna", "type": "Adults-only rooftop bar adjacent to Luna pool" },
-        { "name": "Cove Bar", "type": "Adults-only poolside bar" }
+        { "name": "Luna Libations", "type": "Adults-only rooftop bar on the Luna deck" },
+        { "name": "Enchanted Sword Café", "type": "Sword in the Stone-themed specialty café; coffee, tea, and cocktails" },
+        { "name": "Wishing Star Café", "type": "Specialty café with cocktails, coffee, and snacks" },
+        { "name": "Currents Bar", "type": "Poolside bar" },
+        { "name": "Satellite Bar", "type": "Outdoor poolside bar" },
+        { "name": "The Lookout", "type": "Forward-facing observation lounge and bar" },
+        { "name": "Cove Bar", "type": "Adults-only poolside bar" },
+        { "name": "Cove Café", "type": "Adults-only coffee bar and lounge" }
       ],
       "onboard_activities": [
         "AquaMouse story water ride",
@@ -415,14 +417,15 @@
       "theme": "Adventure and exploration — inspired by Disney's tales of faraway lands and high-seas adventure, with a grand atrium styled after Adventureland and Treasure Island",
       "signature_attraction": "AquaMouse — same story-driven water coaster as the Wish with updated Mickey and Minnie adventure theming",
       "pool_deck": {
-        "notes": "Mickey and Friends Splash Zone family pool; adults-only Luna rooftop pool; Quiet Cove adults-only pool area",
-        "pools": ["Mickey and Friends Splash Zone", "Luna (adults-only)", "Quiet Cove Pool"],
-        "slides_and_attractions": ["AquaMouse story water ride"]
+        "notes": "Mickey and Friends character pool area features seven individual pools (Mickey's, Minnie's, Donald's, Daisy's, Goofy's, Chip 'n' Dale's, Pluto's); Toy Story Splash Zone for younger kids; Quiet Cove Pool is adults-only",
+        "pools": ["Mickey's Pool", "Minnie's Pool", "Donald's Pool", "Daisy's Pool", "Goofy's Pool", "Chip 'n' Dale's Pool", "Pluto's Pool", "Toy Story Splash Zone", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaMouse", "Slide-a-saurus Rex", "Trixie's Falls"]
       },
       "kids_clubs": {
         "oceaneer_club": "Worlds including Marvel Super Hero Academy, Star Wars: Path of the Jedi, Walt Disney Imagineering Lab, and Pixar Play Zone",
-        "the_hideaway": "Tween space 11–14",
-        "the_quiet_cove": "Teen-only space 14–17"
+        "oceaneer_lab": "Merged into expanded Oceaneer Club space",
+        "the_hideaway": "Tween space ages 11–14 with gaming, crafts, and social areas",
+        "vibe": "Teen-only space ages 14–17 with music, movies, and social events"
       },
       "stage_shows": [
         "Disney Seas the Adventure",
@@ -451,25 +454,22 @@
           "name": "Palo Steakhouse",
           "description": "Adults-only (18+) steakhouse; additional charge",
           "meal_periods": ["Dinner"]
-        },
-        {
-          "name": "Scat Cat's Club Café",
-          "description": "Adults-only (18+) jazz-inspired supper club; The Aristocats theme; additional charge",
-          "meal_periods": ["Dinner"]
-        },
-        {
-          "name": "Marceline Market",
-          "description": "Quick-service food hall; no upcharge",
-          "meal_periods": ["Breakfast", "Lunch", "Dinner"]
         }
       ],
       "bars_and_lounges": [
-        { "name": "Star Wars: Hyperspace Lounge", "type": "Immersive galactic cocktail bar" },
-        { "name": "The Bayou", "type": "Outdoor lounge inspired by The Princess and the Frog" },
-        { "name": "Keg & Compass", "type": "Casual pub" },
-        { "name": "Luna", "type": "Adults-only rooftop bar" },
+        { "name": "Scat Cat Lounge", "type": "The Aristocats-themed jazz lounge; cocktails and live music" },
+        { "name": "Skipper Society", "type": "Jungle Cruise-themed pub; Deck 3 near Grand Hall; specialty rums, adventure-themed cocktails, and skipper puns" },
+        { "name": "Periscope Pub", "type": "20,000 Leagues Under the Sea-themed pub; glass ceiling with underwater view; craft beers and specialty cocktails" },
+        { "name": "The Haunted Mansion Parlor", "type": "Gothic Haunted Mansion-themed cocktail lounge" },
+        { "name": "The Rose", "type": "Adults-only cocktail lounge" },
+        { "name": "Heihei Café", "type": "Moana-inspired specialty café" },
+        { "name": "Jade Cricket Café", "type": "Mulan-inspired specialty café" },
+        { "name": "Sarabi Snacks", "type": "Lion King-themed snack and beverage bar" },
+        { "name": "Currents Bar", "type": "Poolside bar" },
+        { "name": "Satellite Bar", "type": "Outdoor poolside bar" },
+        { "name": "The Lookout", "type": "Forward-facing observation lounge and bar" },
         { "name": "Cove Bar", "type": "Adults-only poolside bar" },
-        { "name": "Haunted Mansion: Doom Bar", "type": "Haunted Mansion-themed cocktail lounge" }
+        { "name": "Cove Café", "type": "Adults-only coffee bar and lounge" }
       ],
       "onboard_activities": [
         "AquaMouse story water ride",
@@ -498,14 +498,14 @@
       "theme": "Heroes and Villains — Disney's first ship themed around the full spectrum of heroes, villains, and anti-heroes from across the Disney universe. Black Panther Grand Hall, villain-inspired lounges throughout.",
       "signature_attraction": "AquaMouse — villain-themed story water coaster. Also: Disney Uncharted Adventure shipwide interactive quest via Navigator app.",
       "pool_deck": {
-        "notes": "Mickey and Friends Splash Zone family pool; Toy Story Splash Zone kids water play area; Quiet Cove adults-only pool. Triton-class pool decks run smaller than Dream-class — can feel crowded on sea days.",
-        "pools": ["Mickey and Friends Splash Zone", "Toy Story Splash Zone", "Quiet Cove Pool"],
-        "slides_and_attractions": ["AquaMouse villain-themed water coaster"]
+        "notes": "Mickey and Friends character pool area features seven individual pools (Mickey's, Minnie's, Donald's, Daisy's, Goofy's, Chip 'n' Dale's, Pluto's); Toy Story Splash Zone for younger kids; Quiet Cove Pool is adults-only. Triton-class pool decks run smaller than Dream-class — can feel crowded on sea days.",
+        "pools": ["Mickey's Pool", "Minnie's Pool", "Donald's Pool", "Daisy's Pool", "Goofy's Pool", "Chip 'n' Dale's Pool", "Pluto's Pool", "Toy Story Splash Zone", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaMouse", "Slide-a-saurus Rex", "Trixie's Falls"]
       },
       "kids_clubs": {
         "oceaneer_club": "Ages 3–10. Swirly slide entry. Tangled craft room, Beauty and the Beast library, villain invasion interactive storyline where kids help Black Panther defeat a villain. Character visits from Cruella de Vil, Loki, and Black Panther.",
         "edge": "Tweens 11–14; gaming, social activities",
-        "vibe": "Teens 14–17 — The Hideaway; private lounge with music, movies, social events",
+        "vibe": "Teen-only space ages 14–17 with music, movies, and social events",
         "nursery": "It's a Small World Nursery for ages 6 months to 3 years"
       },
       "stage_shows": [
@@ -540,11 +540,6 @@
           "name": "Enchanté",
           "description": "Adults-only (18+) French fine dining; significant upcharge",
           "meal_periods": ["Dinner"]
-        },
-        {
-          "name": "Marceline Market",
-          "description": "Quick-service food hall; no upcharge",
-          "meal_periods": ["Breakfast", "Lunch", "Dinner"]
         }
       ],
       "bars_and_lounges": [
@@ -557,7 +552,11 @@
         { "name": "Café Megara", "type": "Specialty coffee and cocktails inspired by Hercules character Megara.", "district": "Deck 4" },
         { "name": "Café Merida", "type": "Specialty coffee and cocktails inspired by Brave character Merida.", "district": "Deck 5" },
         { "name": "Cove Café", "type": "Adults-only coffee bar and lounge on Deck 12.", "district": "Pool Deck" },
-        { "name": "Triton Lounge", "type": "Casual all-ages lounge.", "district": "Standalone" }
+        { "name": "Cove Bar", "type": "Adults-only poolside bar", "district": "Pool Deck" },
+        { "name": "Triton Lounge", "type": "Casual all-ages lounge.", "district": "Standalone" },
+        { "name": "Currents Bar", "type": "Poolside bar", "district": "Pool Deck" },
+        { "name": "Satellite Bar", "type": "Outdoor poolside bar", "district": "Pool Deck" },
+        { "name": "The Lookout", "type": "Forward-facing observation lounge and bar", "district": "Standalone" }
       ],
       "onboard_activities": [
         "AquaMouse villain-themed water coaster",
