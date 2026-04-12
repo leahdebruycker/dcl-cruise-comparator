@@ -247,9 +247,9 @@
       "theme": "Art Nouveau — sister ship to the Dream with softer organic styling and a sea-exploration motif",
       "signature_attraction": "AquaDuck — same 765-ft watercoaster as the Dream, wrapping around the forward hull",
       "pool_deck": {
-        "notes": "Donald's Pool main family pool; Nemo's Reef splash zone for young children; Quiet Cove adults-only pool with whirlpools",
-        "pools": ["Donald's Pool", "Nemo's Reef", "Quiet Cove Pool"],
-        "slides_and_attractions": ["AquaDuck watercoaster"]
+        "notes": "Donald's Family Pool is the main family pool; Mickey's Pool and AquaLab are kids areas; Nemo's Reef is a splash zone for young children; Quiet Cove Pool is adults-only; Satellite Falls is an adults-only circular splash pool with rain curtain on Deck 13",
+        "pools": ["Donald's Family Pool", "Mickey's Pool", "AquaLab", "Nemo's Reef", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaDuck watercoaster", "Satellite Falls", "Funnel Puddle"]
       },
       "kids_clubs": {
         "oceaneer_club": "Andy's Room (Toy Story), Marvel Super Hero Academy, Disney Junior, Frozen Adventures — themed immersive rooms for ages 3–12",
@@ -293,14 +293,17 @@
         }
       ],
       "bars_and_lounges": [
+        { "name": "The Tube", "type": "London Underground-themed dance club; Big Ben clock face, subway map floor, red phone booths; opens ~10pm", "district": "Europa" },
+        { "name": "La Piazza", "type": "Italian-themed lounge with live jazz; carousel-lit ceiling, Italian beers and sparkling wines", "district": "Europa" },
+        { "name": "Skyline", "type": "Cocktail lounge — animated city skyline views change nightly (Paris, NYC, Hong Kong, Chicago, Rio)", "district": "Europa" },
+        { "name": "Ooh La La", "type": "Champagne bar — glasses and bottles; sparkling wines, reds, and whites also available", "district": "Europa" },
         { "name": "O'Gill's Pub", "type": "Irish pub — dark wood, brass accents, casual atmosphere", "district": "Europa" },
-        { "name": "Skyline", "type": "Cocktail lounge — animated city skyline views change nightly (Paris, NYC, Hong Kong, Chicago, Rio), city-themed signature cocktails", "district": "Europa" },
-        { "name": "Pink", "type": "Wine and champagne bar — elegant, upscale", "district": "Europa" },
-        { "name": "District Lounge", "type": "Piano bar with live music and entertainment", "district": "Europa" },
-        { "name": "Evolution", "type": "Nightclub and karaoke — adults-only after dark", "district": "Europa" },
-        { "name": "Meridian Bar", "type": "Cocktail bar on Deck 12 between Palo and Remy — pre/post specialty dining", "district": "Standalone" },
-        { "name": "Preludes", "type": "Theater bar adjacent to Walt Disney Theatre — cocktails and snacks before shows", "district": "Standalone" },
-        { "name": "Cove Bar", "type": "Adults-only poolside bar", "district": "Pool Deck" }
+        { "name": "Meridian", "type": "Cocktail bar between Palo and Remy — pre/post specialty dining", "district": "Standalone" },
+        { "name": "Bon Voyage", "type": "Art Deco atrium lounge", "district": "Standalone" },
+        { "name": "D Lounge", "type": "Multi-use entertainment lounge; trivia, game shows, family activities", "district": "Standalone" },
+        { "name": "Currents Bar", "type": "Poolside bar", "district": "Pool Deck" },
+        { "name": "Cove Bar", "type": "Adults-only poolside bar", "district": "Pool Deck" },
+        { "name": "Cove Café", "type": "Adults-only coffee bar and lounge", "district": "Pool Deck" }
       ],
       "onboard_activities": [
         "AquaDuck watercoaster",
