@@ -23,18 +23,46 @@ function formatDate(iso) {
   return `${months[Number(m) - 1]} ${Number(d)}, ${y}`
 }
 
+const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+
+function formatMonth(ym) {
+  const [y, m] = ym.split('-')
+  return `${MONTH_NAMES[Number(m) - 1]} ${y}`
+}
+
 function SailingPanel({ label, state, setState, sailings, ships }) {
-  // Group sailings by ship for the dropdown
-  const sailingsByShip = useMemo(() => {
+  const [filterMonth, setFilterMonth] = useState('')
+  const [filterDuration, setFilterDuration] = useState('')
+  const [filterShip, setFilterShip] = useState('')
+
+  // Derive sorted unique months from catalog
+  const availableMonths = useMemo(() => {
+    const months = new Set(sailings.map(s => s.departureDate.slice(0, 7)))
+    return [...months].sort()
+  }, [sailings])
+
+  // Apply filters
+  const filteredSailings = useMemo(() => {
+    return sailings.filter(s => {
+      if (filterMonth && !s.departureDate.startsWith(filterMonth)) return false
+      if (filterDuration === 'short' && s.nights > 5) return false
+      if (filterDuration === 'long' && s.nights < 7) return false
+      if (filterShip && s.shipId !== filterShip) return false
+      return true
+    })
+  }, [sailings, filterMonth, filterDuration, filterShip])
+
+  // Group filtered sailings by ship for optgroups
+  const filteredByShip = useMemo(() => {
     const groups = {}
-    for (const s of sailings) {
+    for (const s of filteredSailings) {
       const ship = ships.find(sh => sh.id === s.shipId)
       const shipName = ship ? ship.name : s.shipId
       if (!groups[shipName]) groups[shipName] = []
       groups[shipName].push(s)
     }
     return groups
-  }, [sailings, ships])
+  }, [filteredSailings, ships])
 
   function selectSailing(sailingId) {
     if (!sailingId) {
@@ -72,23 +100,61 @@ function SailingPanel({ label, state, setState, sailings, ships }) {
     }))
   }
 
+  const hasFilters = filterMonth || filterDuration || filterShip
+
   return (
     <div className="sailing-panel">
       <h2>{label}</h2>
 
+      <div className="filter-bar">
+        <div className="filter-field">
+          <label>Month</label>
+          <select value={filterMonth} onChange={e => setFilterMonth(e.target.value)}>
+            <option value="">All months</option>
+            {availableMonths.map(ym => (
+              <option key={ym} value={ym}>{formatMonth(ym)}</option>
+            ))}
+          </select>
+        </div>
+        <div className="filter-field">
+          <label>Duration</label>
+          <select value={filterDuration} onChange={e => setFilterDuration(e.target.value)}>
+            <option value="">All lengths</option>
+            <option value="short">Short (3–5 nights)</option>
+            <option value="long">Long (7+ nights)</option>
+          </select>
+        </div>
+        <div className="filter-field">
+          <label>Ship</label>
+          <select value={filterShip} onChange={e => setFilterShip(e.target.value)}>
+            <option value="">All ships</option>
+            {ships.map(s => (
+              <option key={s.id} value={s.id}>{s.name}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
       <div className="field-group">
-        <label>Sailing</label>
+        <label className="sailing-select-label">
+          Sailing
+          <span className="match-count">
+            {hasFilters
+              ? `${filteredSailings.length} of ${sailings.length} sailings`
+              : `${sailings.length} sailings`}
+          </span>
+        </label>
         <select
           value={state.sailingId}
           onChange={e => selectSailing(e.target.value)}
           required
         >
           <option value="">— Select a sailing —</option>
-          {Object.entries(sailingsByShip).map(([shipName, shipSailings]) => (
+          {Object.entries(filteredByShip).map(([shipName, shipSailings]) => (
             <optgroup key={shipName} label={shipName}>
               {shipSailings.map(s => (
                 <option key={s.id} value={s.id}>
-                  {formatDate(s.departureDate)} &mdash; {s.itinerary}
+                  {formatDate(s.departureDate)} — {s.itinerary}
                 </option>
               ))}
             </optgroup>

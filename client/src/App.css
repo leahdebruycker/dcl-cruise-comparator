@@ -124,6 +124,65 @@ body {
   border-bottom: 2px solid var(--seafoam);
 }
 
+/* ── Filter bar ───────────────────────────────── */
+.filter-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  background: #e8f4f2;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter-field label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--teal);
+}
+
+.filter-field select {
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.83rem;
+  color: var(--text);
+  background: var(--white);
+  width: 100%;
+  appearance: auto;
+}
+
+.filter-field select:focus {
+  outline: none;
+  border-color: var(--seafoam);
+  box-shadow: 0 0 0 3px rgba(96, 200, 192, 0.22);
+}
+
+/* ── Sailing select label with match count ─────── */
+.sailing-select-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.match-count {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--muted);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 /* ── Sailing summary ──────────────────────────── */
 .sailing-summary {
   background: var(--white);
