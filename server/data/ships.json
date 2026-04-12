@@ -164,9 +164,9 @@
       "theme": "Art Deco glamour — larger and grander than the Magic-class with a soaring atrium and golden accents",
       "signature_attraction": "AquaDuck — first Disney Cruise Line watercoaster; a 765-ft tube coaster that extends over the ship's bow",
       "pool_deck": {
-        "notes": "Donald's Pool is the main family pool; Nemo's Reef is an interactive water play area for young kids; Quiet Cove Pool is adults-only with whirlpools",
-        "pools": ["Donald's Pool", "Nemo's Reef", "Quiet Cove Pool"],
-        "slides_and_attractions": ["AquaDuck watercoaster"]
+        "notes": "Donald's Family Pool is the main family pool; Mickey's Pool and Nemo's Reef are kids areas; Quiet Cove Pool is adults-only; Satellite Falls is an adults-only circular splash pool with rain curtain on Deck 13",
+        "pools": ["Donald's Family Pool", "Mickey's Pool", "Nemo's Reef", "Quiet Cove Pool"],
+        "slides_and_attractions": ["AquaDuck watercoaster", "Satellite Falls", "Funnel Puddle"]
       },
       "kids_clubs": {
         "oceaneer_club": "Star Wars: Jedi Training, Marvel Super Hero Academy, Pixar Play Zone — immersive themed rooms for ages 3–10",
@@ -209,13 +209,17 @@
         }
       ],
       "bars_and_lounges": [
-        { "name": "The District / Europa", "type": "Adults-only entertainment district with multiple venues" },
-        { "name": "After Hours", "type": "Nightclub" },
-        { "name": "Pink", "type": "Champagne and wine bar" },
-        { "name": "Skyline", "type": "Cocktail lounge with animated city skyline views" },
-        { "name": "O'Gills Pub", "type": "Casual pub with sports screens" },
-        { "name": "Cove Bar", "type": "Adults-only poolside bar" },
-        { "name": "Currents Bar", "type": "Poolside bar" }
+        { "name": "Evolution", "type": "Butterfly-themed dance club/nightclub", "district": "The District" },
+        { "name": "District Lounge", "type": "Piano bar with live entertainment", "district": "The District" },
+        { "name": "Skyline", "type": "Cocktail lounge with animated city skyline views", "district": "The District" },
+        { "name": "Pink", "type": "Wine and champagne bar", "district": "The District" },
+        { "name": "Pub 687", "type": "Sports bar themed after the ship's hull construction number; 10+ beers on tap", "district": "The District" },
+        { "name": "Meridian", "type": "Cocktail bar between Palo and Remy — pre/post specialty dining", "district": "Standalone" },
+        { "name": "Bon Voyage", "type": "Art Deco atrium lounge off Deck 3; open noon–11pm", "district": "Standalone" },
+        { "name": "D Lounge", "type": "Multi-use entertainment lounge; trivia, game shows, family activities", "district": "Standalone" },
+        { "name": "Waves Bar", "type": "Open-air poolside bar on Deck 12", "district": "Pool Deck" },
+        { "name": "Cove Bar", "type": "Adults-only poolside bar", "district": "Pool Deck" },
+        { "name": "Cove Café", "type": "Adults-only coffee bar and lounge", "district": "Pool Deck" }
       ],
       "onboard_activities": [
         "AquaDuck watercoaster",
