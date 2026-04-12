@@ -9,6 +9,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const { ships } = JSON.parse(
   readFileSync(join(__dirname, 'data/ships.json'), 'utf8')
 )
+const { sailings } = JSON.parse(
+  readFileSync(join(__dirname, 'data/sailings.json'), 'utf8')
+)
 
 const app = express()
 const PORT = process.env.PORT || 3001
@@ -18,6 +21,10 @@ app.use(express.json())
 
 app.get('/api/ships', (_req, res) => {
   res.json(ships.map(({ id, name, class: shipClass }) => ({ id, name, class: shipClass })))
+})
+
+app.get('/api/sailings', (_req, res) => {
+  res.json(sailings)
 })
 
 app.use('/api/compare', compareRouter)
