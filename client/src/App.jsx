@@ -219,10 +219,13 @@ function SailingPanel({ label, accent, state, setState, sailings, ships }) {
 
 export default function App() {
   const [clientName, setClientName] = useState('')
+  const [clientMessage, setClientMessage] = useState('')
   const [ships, setShips] = useState([])
   const [sailings, setSailings] = useState([])
   const [sailingA, setSailingA] = useState(emptySailing)
   const [sailingB, setSailingB] = useState(emptySailing)
+  const [sailingC, setSailingC] = useState(emptySailing)
+  const [showThirdSailing, setShowThirdSailing] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
   const [comparisonHtml, setComparisonHtml] = useState(null)
@@ -245,6 +248,11 @@ export default function App() {
       .map(cat => ({ category: cat, price: sailing.prices[cat] || null }))
   }
 
+  function toggleThirdSailing() {
+    if (showThirdSailing) setSailingC(emptySailing())
+    setShowThirdSailing(v => !v)
+  }
+
   async function handleSubmit(e) {
     e.preventDefault()
     setError(null)
@@ -252,31 +260,44 @@ export default function App() {
     setLoading(true)
 
     try {
+      const body = {
+        clientName,
+        clientMessage,
+        sailingA: {
+          shipId: sailingA.shipId,
+          departureDate: sailingA.departureDate,
+          nights: Number(sailingA.nights),
+          homeport: sailingA.homeport,
+          staterooms: buildStateroomsPayload(sailingA),
+        },
+        sailingB: {
+          shipId: sailingB.shipId,
+          departureDate: sailingB.departureDate,
+          nights: Number(sailingB.nights),
+          homeport: sailingB.homeport,
+          staterooms: buildStateroomsPayload(sailingB),
+        },
+      }
+
+      if (showThirdSailing && sailingC.sailingId) {
+        body.sailingC = {
+          shipId: sailingC.shipId,
+          departureDate: sailingC.departureDate,
+          nights: Number(sailingC.nights),
+          homeport: sailingC.homeport,
+          staterooms: buildStateroomsPayload(sailingC),
+        }
+      }
+
       const res = await fetch('/api/compare', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          clientName,
-          sailingA: {
-            shipId: sailingA.shipId,
-            departureDate: sailingA.departureDate,
-            nights: Number(sailingA.nights),
-            homeport: sailingA.homeport,
-            staterooms: buildStateroomsPayload(sailingA),
-          },
-          sailingB: {
-            shipId: sailingB.shipId,
-            departureDate: sailingB.departureDate,
-            nights: Number(sailingB.nights),
-            homeport: sailingB.homeport,
-            staterooms: buildStateroomsPayload(sailingB),
-          },
-        }),
+        body: JSON.stringify(body),
       })
 
       if (!res.ok) {
-        const body = await res.json().catch(() => ({}))
-        throw new Error(body.error || `Server error ${res.status}`)
+        const errBody = await res.json().catch(() => ({}))
+        throw new Error(errBody.error || `Server error ${res.status}`)
       }
 
       setComparisonHtml(await res.text())
@@ -292,6 +313,14 @@ export default function App() {
     window.open(URL.createObjectURL(blob), '_blank')
   }
 
+  const [copied, setCopied] = useState(false)
+
+  async function copyHtml() {
+    await navigator.clipboard.writeText(comparisonHtml)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
+
   return (
     <div className="app">
       <header className="app-header">
@@ -301,21 +330,42 @@ export default function App() {
 
       <main className="app-main">
         <form onSubmit={handleSubmit} className="compare-form">
-          <div className="field-group client-name-row">
-            <label htmlFor="clientName">Client Name</label>
-            <input
-              id="clientName"
-              type="text"
-              placeholder="e.g. Bancroft Family"
-              value={clientName}
-              onChange={e => setClientName(e.target.value)}
-              required
-            />
+          <div className="form-top-row">
+            <div className="field-group client-name-field">
+              <label htmlFor="clientName">Client Name</label>
+              <input
+                id="clientName"
+                type="text"
+                placeholder="e.g. Smith Family"
+                value={clientName}
+                onChange={e => setClientName(e.target.value)}
+                required
+              />
+            </div>
+            <div className="field-group client-message-field">
+              <label htmlFor="clientMessage">Message to Client <span className="field-optional">(optional)</span></label>
+              <textarea
+                id="clientMessage"
+                rows={4}
+                placeholder="Hi Sarah and Ben, here are the two sailings we discussed…"
+                value={clientMessage}
+                onChange={e => setClientMessage(e.target.value)}
+              />
+            </div>
           </div>
 
-          <div className="sailings-grid">
+          <div className={`sailings-grid${showThirdSailing ? ' sailings-grid--three' : ''}`}>
             <SailingPanel label="Option A" accent="var(--seafoam)" state={sailingA} setState={setSailingA} sailings={sailings} ships={ships} />
             <SailingPanel label="Option B" accent="var(--purple)" state={sailingB} setState={setSailingB} sailings={sailings} ships={ships} />
+            {showThirdSailing && (
+              <SailingPanel label="Option C" accent="var(--gold)" state={sailingC} setState={setSailingC} sailings={sailings} ships={ships} />
+            )}
+          </div>
+
+          <div className="sailing-count-actions">
+            <button type="button" className="btn-toggle-sailing" onClick={toggleThirdSailing}>
+              {showThirdSailing ? '− Remove Option C' : '+ Add Option C'}
+            </button>
           </div>
 
           {error && <p className="error-msg">{error}</p>}
@@ -331,9 +381,14 @@ export default function App() {
           <div className="output-section">
             <div className="output-toolbar">
               <span className="output-label">Comparison Preview</span>
-              <button type="button" className="btn-open" onClick={openInNewTab}>
-                Open in New Tab ↗
-              </button>
+              <div className="output-actions">
+                <button type="button" className="btn-copy" onClick={copyHtml}>
+                  {copied ? 'Copied ✓' : 'Copy HTML'}
+                </button>
+                <button type="button" className="btn-open" onClick={openInNewTab}>
+                  Open in New Tab ↗
+                </button>
+              </div>
             </div>
             <iframe
               className="comparison-frame"

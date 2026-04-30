@@ -4,7 +4,7 @@ A tool for Disney Cruise Line travel agents to quickly build personalized sailin
 
 ## What it does
 
-A travel agent selects two DCL sailings side-by-side, optionally enters stateroom pricing for each, and clicks **Generate Comparison**. The app produces a polished, print-ready HTML document that can be previewed inline, opened in a new tab, or sent directly to the client.
+A travel agent enters a client name, an optional personal message, and selects two or three DCL sailings side-by-side with optional stateroom pricing. Clicking **Generate Comparison** produces a polished, print-ready HTML document that renders in an inline preview. From there the agent can open it in a new tab or copy the raw HTML to paste directly into Mailchimp.
 
 The comparison document covers:
 
@@ -18,7 +18,7 @@ The comparison document covers:
 - Pool deck (pools, slides & attractions)
 - Bars & lounges
 
-The sailing catalog is filterable by month, duration (short 3–5 nights / long 7+ nights), and ship.
+The sailing catalog is filterable by month, duration (short 3–5 nights / long 7+ nights), and ship. Two-sailing comparisons use a side-by-side layout; adding a third sailing switches to a labeled row layout with columns for each option.
 
 ## Ships covered
 
@@ -57,7 +57,7 @@ The client proxies `/api/*` to `http://localhost:3001`.
 dcl-cruise-comparator/
 ├── client/          # React + Vite frontend
 │   └── src/
-│       └── App.jsx  # Comparison form + iframe preview
+│       └── App.jsx  # Comparison form + iframe preview + Copy HTML
 ├── server/          # Express API
 │   ├── index.js
 │   ├── routes/
@@ -70,24 +70,43 @@ dcl-cruise-comparator/
 
 ## API
 
-**`POST /api/compare`** — accepts two sailings and returns a complete HTML comparison document.
+**`POST /api/compare`** — accepts two or three sailings and returns a complete HTML comparison document.
+
+`clientMessage` and `sailingC` are optional. When `sailingC` is included the response uses a three-column labeled layout; otherwise a two-column side-by-side layout is returned.
 
 ```json
 {
   "clientName": "Smith Family",
+  "clientMessage": "Hi Sarah and Joe — here are the three sailings we discussed on our call. The Fantasy and Dream are sister ships so the main differences come down to the show lineup and which rotational dining restaurants you'll rotate through. Let me know what questions come up!",
   "sailingA": {
-    "shipId": "wish",
-    "departureDate": "2025-06-14",
-    "nights": 3,
+    "shipId": "fantasy",
+    "departureDate": "2027-03-26",
+    "nights": 5,
     "homeport": "Port Canaveral",
-    "staterooms": [{ "category": "Verandah", "price": 5200 }]
+    "staterooms": [
+      { "category": "Interior", "price": 7579 },
+      { "category": "Verandah", "price": 8277 }
+    ]
   },
   "sailingB": {
-    "shipId": "dream",
-    "departureDate": "2025-06-11",
-    "nights": 4,
+    "shipId": "wish",
+    "departureDate": "2027-03-27",
+    "nights": 5,
     "homeport": "Port Canaveral",
-    "staterooms": [{ "category": "Verandah", "price": 4800 }]
+    "staterooms": [
+      { "category": "Interior", "price": 7605 },
+      { "category": "Verandah", "price": 8895 }
+    ]
+  },
+  "sailingC": {
+    "shipId": "dream",
+    "departureDate": "2027-03-29",
+    "nights": 4,
+    "homeport": "Fort Lauderdale",
+    "staterooms": [
+      { "category": "Interior", "price": 5331 },
+      { "category": "Verandah", "price": 5771 }
+    ]
   }
 }
 ```

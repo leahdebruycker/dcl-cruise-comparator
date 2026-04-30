@@ -4,6 +4,8 @@
   --seafoam-dark: #4aada6;
   --purple: #d0a8ff;
   --purple-dark: #b48cdd;
+  --gold: #f5c060;
+  --gold-dark: #d4a040;
   --bg: #F0F8F5;
   --white: #ffffff;
   --border: #cfe8e3;
@@ -95,18 +97,81 @@ body {
   box-shadow: 0 0 0 3px rgba(96, 200, 192, 0.22);
 }
 
-/* ── Client name row ──────────────────────────── */
-.client-name-row {
-  max-width: 480px;
+/* ── Top row: client name + message ──────────── */
+.form-top-row {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
   margin-bottom: 28px;
+  align-items: start;
 }
 
-/* ── Two-column sailing grid ──────────────────── */
+.client-name-field,
+.client-message-field {
+  margin-bottom: 0;
+}
+
+.field-optional {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.field-group textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--white);
+  width: 100%;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.field-group textarea:focus {
+  outline: none;
+  border-color: var(--seafoam);
+  box-shadow: 0 0 0 3px rgba(96, 200, 192, 0.22);
+}
+
+/* ── Sailing grid ─────────────────────────────── */
 .sailings-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 28px;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
+}
+
+.sailings-grid--three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ── Add / Remove Option C ────────────────────── */
+.sailing-count-actions {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.btn-toggle-sailing {
+  background: transparent;
+  color: var(--teal);
+  border: 1px solid var(--border);
+  padding: 7px 16px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 0.83rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-toggle-sailing:hover {
+  background: var(--bg);
+  border-color: var(--seafoam);
 }
 
 /* ── Sailing panel ────────────────────────────── */
@@ -321,6 +386,30 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+}
+
+.output-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-copy {
+  background: transparent;
+  color: var(--teal);
+  border: 1px solid var(--border);
+  padding: 8px 18px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  min-width: 110px;
+}
+
+.btn-copy:hover {
+  background: var(--bg);
+  border-color: var(--seafoam);
 }
 
 .output-label {
